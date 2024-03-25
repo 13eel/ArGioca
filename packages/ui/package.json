@@ -1,5 +1,5 @@
 {
-  "name": "@acme/ui",
+  "name": "@packages/ui",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -30,9 +30,9 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
+    "@tooling/eslint-config": "workspace:*",
+    "@tooling/prettier-config": "workspace:*",
+    "@tooling/tsconfig": "workspace:*",
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -45,9 +45,9 @@
   },
   "eslintConfig": {
     "extends": [
-      "@acme/eslint-config/base",
-      "@acme/eslint-config/react"
+      "@tooing/eslint-config/base",
+      "@tooling/eslint-config/react"
     ]
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@tooling/prettier-config"
 }
