@@ -1,5 +1,5 @@
 {
-  "extends": "@tooling/tsconfig/base.json",
+  "extends": "@argioca/tsconfig/base.json",
   "compilerOptions": {
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
     "plugins": [

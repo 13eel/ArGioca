@@ -1,5 +1,5 @@
 {
-  "name": "@tooling/eslint-config",
+  "name": "@argioca/eslint-config",
   "version": "0.2.0",
   "private": true,
   "license": "MIT",
@@ -26,8 +26,8 @@
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "@tooling/prettier-config": "workspace:*",
-    "@tooling/tsconfig": "workspace:*",
+    "@argioca/prettier-config": "workspace:*",
+    "@argioca/tsconfig": "workspace:*",
     "@types/eslint": "^8.56.5",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
@@ -39,5 +39,5 @@
       "./base.js"
     ]
   },
-  "prettier": "@tooling/prettier-config"
+  "prettier": "@argioca/prettier-config"
 }

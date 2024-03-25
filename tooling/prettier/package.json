@@ -1,5 +1,5 @@
 {
-  "name": "@tooling/prettier-config",
+  "name": "@argioca/prettier-config",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -12,14 +12,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
     "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.11"
+    "prettier-plugin-tailwindcss": "^0.5.12"
   },
   "devDependencies": {
-    "@tooling/tsconfig": "workspace:*",
-    "@types/node": "^20",
-    "typescript": "^5.3.0"
+    "@argioca/tsconfig": "workspace:*",
+    "typescript": "^5.4.3"
   },
-  "prettier": "./index.js"
+  "prettier": "@argioca/prettier-config"
 }

@@ -11,7 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@package/ui": "workspace:*",
+    "@packages/ui": "workspace:*",
     "@astrojs/check": "^0.5.6",
     "@astrojs/mdx": "^2.1.1",
     "@astrojs/react": "^3.0.10",
@@ -30,18 +30,18 @@
     "typescript": "^5.4.2"
   },
   "devDependencies": {
-    "@tooling/eslint-config": "workspace:*",
-    "@tooling/prettier-config": "workspace:*",
-    "@tooling/tsconfig": "workspace:*",
+    "@argioca/eslint-config": "workspace:*",
+    "@argioca/prettier-config": "workspace:*",
+    "@argioca/tsconfig": "workspace:*",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21"
   },
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@tooling/eslint-config/base",
-      "@tooling/eslint-config/astro"
+      "@argioca/eslint-config/base",
+      "@argioca/eslint-config/astro"
     ]
   },
-  "prettier": "@tooling/prettier-config"
+  "prettier": "@argioca/prettier-config"
 }

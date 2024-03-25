@@ -30,9 +30,9 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@tooling/eslint-config": "workspace:*",
-    "@tooling/prettier-config": "workspace:*",
-    "@tooling/tsconfig": "workspace:*",
+    "@argioca/eslint-config": "workspace:*",
+    "@argioca/prettier-config": "workspace:*",
+    "@argioca/tsconfig": "workspace:*",
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -46,8 +46,8 @@
   "eslintConfig": {
     "extends": [
       "@tooing/eslint-config/base",
-      "@tooling/eslint-config/react"
+      "@argioca/eslint-config/react"
     ]
   },
-  "prettier": "@tooling/prettier-config"
+  "prettier": "@argioca/prettier-config"
 }

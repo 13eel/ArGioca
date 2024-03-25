@@ -32,9 +32,9 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@tooling/eslint-config": "workspace:*",
-    "@tooling/prettier-config": "workspace:*",
-    "@tooling/tsconfig": "workspace:*",
+    "@argioca/eslint-config": "workspace:*",
+    "@argioca/prettier-config": "workspace:*",
+    "@argioca/tsconfig": "workspace:*",
     "@types/better-sqlite3": "^7.6.9",
     "@types/eslint": "^8.56.2",
     "@types/node": "^20.11.20",
@@ -59,10 +59,10 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@tooling/eslint-config/base",
-      "@tooling/eslint-config/nextjs",
-      "@tooling/eslint-config/react"
+      "@argioca/eslint-config/base",
+      "@argioca/eslint-config/nextjs",
+      "@argioca/eslint-config/react"
     ]
   },
-  "prettier": "@tooling/prettier-config"
+  "prettier": "@argioca/prettier-config"
 }
