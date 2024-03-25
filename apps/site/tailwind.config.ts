@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-import UIConfig from "@acme/ui/tailwindConfig";
+import UIConfig from "@packages/ui/tailwindConfig";
 
 export default {
   // We need to append the path to the UI package to the content array so that

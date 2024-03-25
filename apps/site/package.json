@@ -1,5 +1,5 @@
 {
-  "name": "astrojs",
+  "name": "@argioca/site",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,7 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@acme/ui": "workspace:*",
+    "@package/ui": "workspace:*",
     "@astrojs/check": "^0.5.6",
     "@astrojs/mdx": "^2.1.1",
     "@astrojs/react": "^3.0.10",
@@ -30,18 +30,18 @@
     "typescript": "^5.4.2"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
+    "@tooling/eslint-config": "workspace:*",
+    "@tooling/prettier-config": "workspace:*",
+    "@tooling/tsconfig": "workspace:*",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21"
   },
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@acme/eslint-config/base",
-      "@acme/eslint-config/astro"
+      "@tooling/eslint-config/base",
+      "@tooling/eslint-config/astro"
     ]
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@tooling/prettier-config"
 }
