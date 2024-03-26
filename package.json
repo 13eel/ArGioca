@@ -12,9 +12,14 @@
     "clean": "git clean -xdf node_modules",
     "clean:workspaces": "turbo clean",
     "lint": "turbo lint",
+    "db:push": "bun run --cwd packages/db push",
+    "db:studio": "bun run --cwd packages/db studio",
     "dev": "turbo dev",
     "dev:site": "turbo dev --filter=./apps/site",
-    "dev:admin": "turbo dev --filter=./apps/amdin"
+    "dev:admin": "turbo dev --filter=./apps/admin"
   },
-  "packageManager": "bun@1.0.33"
+  "packageManager": "bun@1.0.33",
+  "devDependencies": {
+    "dotenv-cli": "^7.4.1"
+  }
 }

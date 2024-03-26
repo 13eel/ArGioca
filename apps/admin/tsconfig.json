@@ -12,7 +12,8 @@
     "paths": {
       "~/*": ["./src/*"],
       "@ui/*": ["../../packages/ui/src/*"],
-      "@ui": ["../../packages/ui/src/index.ts"]
+      "@ui": ["../../packages/ui/src/index.ts"],
+      "@db": ["../../packages/db/src/index.ts"]
     }
   },
   "include": [

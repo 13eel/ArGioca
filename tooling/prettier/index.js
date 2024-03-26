@@ -1,10 +1,10 @@
+import { fileURLToPath } from "url";
+
 /** @typedef {import("prettier").Config} PrettierConfig */
 /** @typedef {import("prettier-plugin-tailwindcss").PluginOptions} TailwindConfig */
 /** @typedef {import("@ianvs/prettier-plugin-sort-imports").PluginConfig} SortImportsConfig */
+
 /** @type { PrettierConfig | SortImportsConfig | TailwindConfig } */
-
-import { fileURLToPath } from "url";
-
 const config = {
   plugins: [
     "@ianvs/prettier-plugin-sort-imports",
@@ -21,8 +21,8 @@ const config = {
     "^(expo(.*)$)|^(expo$)",
     "<THIRD_PARTY_MODULES>",
     "",
-    "<TYPES>^@{packages|ui}",
-    "^@{packages|ui}/(.*)$",
+    "<TYPES>^@{argioca|packages|ui|db}",
+    "^@{argioca|packages|ui|db}/(.*)$",
     "",
     "<TYPES>^[.|..|~]",
     "^~/",

@@ -2,12 +2,12 @@ import type { DefaultSession, NextAuthOptions } from "next-auth";
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import { getServerSession } from "next-auth";
 import { type Adapter } from "next-auth/adapters";
-
 // import DiscordProvider from "next-auth/providers/discord";
+import GoogleProvider from "next-auth/providers/google";
+
+import { createTable, db } from "@packages/db";
 
 import { env } from "~/env";
-import { db } from "~/server/db";
-import { createTable } from "~/server/db/schema";
 
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`
@@ -45,12 +45,14 @@ export const authOptions: NextAuthOptions = {
       },
     }),
   },
+  pages: { signIn: "/login" },
+  session: { strategy: "jwt" },
   adapter: DrizzleAdapter(db, createTable) as Adapter,
   providers: [
-    // DiscordProvider({
-    //   clientId: env.DISCORD_CLIENT_ID,
-    //   clientSecret: env.DISCORD_CLIENT_SECRET,
-    // }),
+    GoogleProvider({
+      clientId: env.GOOGLE_CLIENT_ID,
+      clientSecret: env.GOOGLE_CLIENT_SECRET,
+    }),
     /**
      * ...add more providers here.
      *
