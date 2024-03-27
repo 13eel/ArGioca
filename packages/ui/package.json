@@ -1,5 +1,5 @@
 {
-  "name": "@acme/ui",
+  "name": "@packages/ui",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -22,6 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "cmdk": "^1.0.0",
@@ -30,24 +31,26 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
+    "@argioca/eslint-config": "workspace:*",
+    "@argioca/prettier-config": "workspace:*",
+    "@argioca/tsconfig": "workspace:*",
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "barrelsby": "^2.8.1",
     "chokidar-cli": "^3.0.0",
     "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "react": "^18",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.3.0"
   },
   "eslintConfig": {
     "extends": [
-      "@acme/eslint-config/base",
-      "@acme/eslint-config/react"
+      "@tooing/eslint-config/base",
+      "@argioca/eslint-config/react"
     ]
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@argioca/prettier-config"
 }
